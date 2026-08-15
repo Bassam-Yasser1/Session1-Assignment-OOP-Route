@@ -6,10 +6,11 @@ namespace Session1_Assignment_OOP
 {
     internal struct DeliveryCenter
     {
-        Shipment[] shipments = new Shipment[10];
+        private Shipment[] shipments;
 
         public DeliveryCenter()
         {
+            shipments = new Shipment[10];
         }
 
         public Shipment this[int index]
